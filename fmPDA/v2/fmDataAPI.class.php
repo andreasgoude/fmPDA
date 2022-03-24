@@ -1152,7 +1152,7 @@ class fmDataAPI extends fmAPI
    //          'deleteRelated'          => array(array('table' => '<string>', 'recordID' => '<number>'), ...)
    //          'query'                  => array(array('<fieldName>' => '<value>', '<fieldName>' => '<value>', ..., 'omit' => '<boolean>'), ... )
    //       )
-   public function getAPIParams($params = array(), $method, $returnAs = '')
+   public function getAPIParams($params = array(), $method = null, $returnAs = '')
    {
       // Some GET parameters have underscores in front of them while POST never does, we need a mapping table
       $keys = array(
