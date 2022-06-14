@@ -33,8 +33,11 @@
                   right: 'month,agendaWeek,agendaDay'
                },
                defaultDate: '<?php echo $startingDate; ?>',
-               editable: false,
+               editable: true,
                weekMode: 'variable',
+               weekNumbers: true,
+               weekNumberCalculation: 'ISO',
+               firstDay:1,
 
                eventSources: [
                   { url: 'projects.ajax.php' },
