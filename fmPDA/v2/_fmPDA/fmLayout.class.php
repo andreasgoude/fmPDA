@@ -5,7 +5,7 @@
 //
 // *********************************************************************************************************************************
 //
-// Copyright (c) 2017 - 2019 Mark DeNyse
+// Copyright (c) 2017 - 2024 Mark DeNyse
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -64,7 +64,7 @@ class fmLayout
    // *********************************************************************************************************************************
    function getField($fieldName)
    {
-      if (array_key_exists($field, $this->data[FM_FIELD_DATA])) {
+      if (array_key_exists($fieldName, $this->data[FM_FIELD_DATA])) {
          return new fmField($this->fm, $this->layout, $fieldName);
       }
       else {
